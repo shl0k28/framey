@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
       },
     ],
     ogImage: `${imageUrlBase}/600`,
-    postUrl: `${process.env.NEXT_PUBLIC_HOST}/frames`,
+    postUrl: `${process.env.NEXT_PUBLIC_HOST}/api/frames`,
   } as Frame
 
   // Return the frame as HTML
@@ -36,3 +36,5 @@ export async function POST(request: NextRequest) {
     status: 200,
   });
 }
+
+// export { POST } from 'frames.js/next/server'
