@@ -21,7 +21,7 @@ export default async function Home(props: any) {
 
   return (
     <FrameContainer
-      postUrl="/frames"
+      postUrl="/api/frames"
       state={state}
       previousFrame={previousFrame}
     >
